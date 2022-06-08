@@ -1,0 +1,11 @@
+[Unit]
+Description=This is a test script for a linux engineer candidate
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /opt/bss/test3/unit.py
+TimeoutStartSec=0
+
+[Install]
+WantedBy=default.target
